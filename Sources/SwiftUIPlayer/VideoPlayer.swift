@@ -13,7 +13,7 @@ public struct VideoPlayer: UIViewControllerRepresentable {
     
     @Binding var player: AVPlayer
     
-    func makeUIViewController(context: UIViewControllerRepresentableContext<VideoPlayer>) -> AVPlayerViewController {
+    public func makeUIViewController(context: UIViewControllerRepresentableContext<VideoPlayer>) -> AVPlayerViewController {
         let controller = AVPlayerViewController()
         
         controller.player = player
@@ -22,7 +22,7 @@ public struct VideoPlayer: UIViewControllerRepresentable {
         
     }
     
-    func updateUIViewController(
+    public func updateUIViewController(
         _ uiViewController: AVPlayerViewController,
         context: UIViewControllerRepresentableContext<VideoPlayer>
     ) {

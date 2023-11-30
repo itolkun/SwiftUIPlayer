@@ -14,7 +14,7 @@ public struct TimecodeListView: View {
     let player: AVPlayer
     let timecodes: [Timecode]
     
-    var body: some View {
+    public var body: some View {
         GeometryReader { _ in
             VStack (alignment: .leading, spacing: 5) {
                 Text("Timecodes:")

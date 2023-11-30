@@ -21,7 +21,7 @@ public struct VideoPlayerView: View {
     @State var player: AVPlayer
     let timecodes: [Timecode]
     
-    var body: some View {
+    public var body: some View {
         
         let controlButtons = PlayerControlButtons(
             isPlaying: $isPlaying,
