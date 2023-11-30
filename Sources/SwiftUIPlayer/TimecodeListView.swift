@@ -9,7 +9,7 @@ import SwiftUI
 import AVKit
 
 @available(iOS 14.0, *)
-struct TimecodeListView: View {
+public struct TimecodeListView: View {
     
     let player: AVPlayer
     let timecodes: [Timecode]

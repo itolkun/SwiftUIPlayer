@@ -9,7 +9,7 @@ import SwiftUI
 import AVKit
 
 @available(iOS 14.0, *)
-struct CustomProgressBar: UIViewRepresentable {
+public struct CustomProgressBar: UIViewRepresentable {
     
     @Binding var value: Float
     @Binding var avPlayer: AVPlayer
@@ -21,7 +21,7 @@ struct CustomProgressBar: UIViewRepresentable {
         createThumbImage(size: CGSize(width: 16, height: 16), color: .white)
     }
     
-    func makeUIView(context: UIViewRepresentableContext<CustomProgressBar>) -> UISlider {
+    public func makeUIView(context: UIViewRepresentableContext<CustomProgressBar>) -> UISlider {
         let dashedSlider = DashedSlider(
             avPlayer: self.avPlayer, timecodes: timecodes
         )
@@ -43,7 +43,7 @@ struct CustomProgressBar: UIViewRepresentable {
         return dashedSlider
     }
     
-    func updateUIView(
+    public func updateUIView(
         _ uiView: UISlider,
         context: UIViewRepresentableContext<CustomProgressBar>
     ) {
@@ -69,11 +69,11 @@ struct CustomProgressBar: UIViewRepresentable {
         }
     }
     
-    func makeCoordinator() -> Coordinator {
+    public func makeCoordinator() -> Coordinator {
         CustomProgressBar.Coordinator(parent1: self)
     }
     
-    class Coordinator: NSObject {
+    public class Coordinator: NSObject {
         var parent: CustomProgressBar
 
         private var sliderTimeObserver: Any?

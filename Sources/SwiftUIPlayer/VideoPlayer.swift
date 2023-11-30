@@ -9,7 +9,7 @@ import SwiftUI
 import AVKit
 
 @available(iOS 14.0, *)
-struct VideoPlayer: UIViewControllerRepresentable {
+public struct VideoPlayer: UIViewControllerRepresentable {
     
     @Binding var player: AVPlayer
     

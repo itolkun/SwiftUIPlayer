@@ -9,7 +9,7 @@ import SwiftUI
 import AVKit
 
 @available(iOS 14.0, *)
-struct PlayerControlButtons: View {
+public struct PlayerControlButtons: View {
     
     @State private var soundOff = false
     @State private var sliderValue: Float = 0
@@ -37,7 +37,7 @@ struct PlayerControlButtons: View {
         return "00:00"
     }
 
-    var body: some View {
+    public var body: some View {
         GeometryReader { geometry in
             let screenWidth = geometry.size.width
             let screenHeight = geometry.size.height

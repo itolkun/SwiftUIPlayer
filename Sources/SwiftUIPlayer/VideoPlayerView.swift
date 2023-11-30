@@ -9,7 +9,7 @@ import SwiftUI
 import AVKit
 
 @available(iOS 14.0, *)
-struct VideoPlayerView: View {
+public struct VideoPlayerView: View {
     
     @State private var isPlaying = false
     @State private var showControls = true
