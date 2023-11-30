@@ -1,13 +1,19 @@
 # SwiftUIPlayer
 SwiftUIPlayer is developed by [Aitolkun Anarbekova](https://www.linkedin.com/in/aitolkun/)
 
+
+
 ## Installation
+<img align="right" width="307" src="Sources/Media.xcassets/example-app.imageset/Image.png">
 
 Navigate to your Xcode project then select `Add Package Dependencies`:
+
 ```
 https://github.com/itolkun/SwiftUIPlayer.git
 ```
 or search for `SwiftUIPlayer`
+
+
 
 ## Example
 ```swift
