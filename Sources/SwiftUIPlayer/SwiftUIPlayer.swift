@@ -8,7 +8,7 @@ public struct SwiftUIPlayer: View {
     
     @ObservedObject var viewModel: PlayerViewModel
     
-     init(url: String, timecodes: [Timecode]) {
+    init(url: String, timecodes: [Timecode]) {
         self.viewModel = PlayerViewModel(url: url, timecodes: timecodes)
     }
     
