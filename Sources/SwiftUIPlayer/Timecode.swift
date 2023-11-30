@@ -12,7 +12,7 @@ public struct Timecode {
     let title: String
     let time: CMTime
     
-    init(title: String, time: CMTime) {
+    public init(title: String, time: CMTime) {
         self.title = title
         self.time = time
     }
