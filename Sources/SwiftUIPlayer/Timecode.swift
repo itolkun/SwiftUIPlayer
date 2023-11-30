@@ -8,7 +8,7 @@
 import Foundation
 import AVKit
 
-struct Timecode {
+public struct Timecode {
     let title: String
     let time: CMTime
 }

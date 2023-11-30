@@ -12,9 +12,9 @@ import AVKit
 public class PlayerViewModel: ObservableObject {
     
     @Published var player = AVPlayer()
-    var timecodes: [Timecode]
+    public var timecodes: [Timecode]
     
-    init(url: String, timecodes: [Timecode]) {
+    public init(url: String, timecodes: [Timecode]) {
         self.timecodes = timecodes
         if let videoURL = URL(string: url) {
             player = AVPlayer(url: videoURL)
